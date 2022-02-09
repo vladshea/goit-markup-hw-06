@@ -444,6 +444,7 @@ body {
   padding-bottom: 60px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .address-list {
@@ -526,6 +527,54 @@ body {
   fill: #fff;
   width: 20px;
   height: 20px;
+}
+
+.footer-submit {
+  margin-left: 93px;
+  position: absolute;
+  right: 15px;
+  top: 72px;
+}
+
+.footer-submit-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-email-form {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+}
+
+.footer-submit-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+}
+
+.footer-btn-icon-svg {
+  width: 143px;
+  height: 30px;
+}
+
+.footer-submit-wrap {
+  display: flex;
+  align-items: center;
 }
 
 /* --------------------------------portfolio----------------------------------- */
@@ -647,7 +696,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background: #ffffff;
   box-shadow: transparent;
   border-radius: 4px;
@@ -666,6 +715,175 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.modal-form {
+}
+
+.inputs {
+  padding: 40px;
+}
+
+.form-title {
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.input-all {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 40px;
+  transition: border 500ms;
+}
+
+.input-all:focus {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input-all:focus + .input-icon {
+  fill: #2196f3;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.labels {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-text {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+  transition: border 500ms;
+}
+
+.form-text::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-text:focus {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  margin-left: 124px;
+}
+
+.form-buttom-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 15px;
+  top: 40%;
+  transform: translateY(-40%);
+  transition: fill 500ms;
+}
+
+.check-lable {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+/* .check-lable::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.policy-check:checked + .check-lable::before {
+  border: none;
+  background-image: url(../images/icon\ check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.check-lable span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 12px;
+}
+.check-icon {
+  fill: transparent;
+}
+.policy-check:checked + .check-lable span {
+  border: none;
+  background-color: #2196f3;
+}
+.policy-check:checked + .check-lable .check-icon {
+  fill: #ffffff;
+}
+
+.check-link {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+  margin-left: 7px;
 }
 
 .close-icon {
