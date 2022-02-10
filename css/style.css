@@ -532,7 +532,7 @@ body {
 .footer-submit {
   margin-left: 93px;
   position: absolute;
-  right: 15px;
+  right: 30px;
   top: 72px;
 }
 
@@ -555,6 +555,7 @@ body {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+  color: #fff;
 }
 
 .footer-submit-btn {
@@ -838,13 +839,15 @@ body {
   margin-bottom: 30px;
 }
 
-/* .check-lable::before {
+.check-lable::before {
   content: '';
-  width: 15px;
+  width: 16px;
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 8px;
+  position: absolute;
+  left: 10px;
 }
 .policy-check:checked + .check-lable::before {
   border: none;
@@ -852,11 +855,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-} */
+}
 
-.check-lable span {
-  width: 16px;
-  height: 15px;
+/* .check-lable span {
+  width: 13px;
+  height: 12px;
   border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 7px;
@@ -875,7 +878,7 @@ body {
 }
 .policy-check:checked + .check-lable .check-icon {
   fill: #ffffff;
-}
+} */
 
 .check-link {
   font-size: 14px;

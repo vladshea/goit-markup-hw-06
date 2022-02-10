@@ -489,31 +489,32 @@
             <form action="#" class="modal-form">
                 <div class="inputs">
                     <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                    <label for="form-name" class="labels">Имя</label>
+                    <label class="labels">Имя</label>
                     <div class="input-wrap">
                         <input type="text" name="form-name" class="input-all input-name">
                         <svg class="input-icon ">
-                            <use href="./images/icons.svg#icon-person"></use>>
+                            <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
-                    <label for="form-tel" class="labels">Телефон</label>
+                    <label  class="labels">Телефон</label>
                     <div class="input-wrap">
                     <input type="text" name="form-tel" class="input-all input-tel">
                         <svg class="input-icon ">
-                            <use href="./images/icons.svg#icon-phone"></use>>
+                            <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-                    <label for="form-male" class="labels">Почта</label>
+                    <label for="form-mail"  class="labels">Почта</label>
                     <div class="input-wrap">
-                    <input type="text" name="form-mail" class="input-all input-mail">
+                    <input type="text" name="form-mail" id="form-mail" class="input-all input-mail">
                         <svg class="input-icon">
-                            <use href="./images/icons.svg#icon-email"></use>>
+                            <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
-                    <label for="form-text" class="labels">Комментарий</label>
+                    <label for="form-text"  class="labels">Комментарий</label>
                     <textarea 
                     name="form-text" 
-                    class="form-text" 
+                    class="form-text"
+                    id="form-text" 
                     placeholder="Введите текст">
                     </textarea>
                     <input 
@@ -522,12 +523,7 @@
                     id="policy"
                     class="policy-check visually-hidden"
                     >
-                    <label for="policy" class="check-lable">
-                        <span class="check-icon">
-                            <svg class="check-icon" width="16px" height="15px">
-                            <use href="./images/icons.svg#icon-Vector"></use>>
-                            </svg>
-                        </span> 
+                    <label for="policy"  class="check-lable">
                         Соглашаюсь с рассылкой и принимаю <a href="#" class="check-link">Условия договора</a> </label>
                     <button type="submit" class="form-btn">Отправить</button>
                 </div>
